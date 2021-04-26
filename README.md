@@ -23,7 +23,7 @@
 
 ###BubbleView
 
-* BubbleLinearLayout
+ BubbleLinearLayout
 
 ```xml
  <com.android.application.BubbleView.BubbleLinearLayout
@@ -49,7 +49,7 @@
 
 ```
 
-* BubbleTextView
+ BubbleTextView
 
 ```xml
     <com.android.application.BubbleView.BubbleTextView
@@ -69,7 +69,7 @@
 
 ```
 
-* BubbleImageView
+ BubbleImageView
 
 ```xml
     <com.android.application.BubbleView.BubbleImageView
