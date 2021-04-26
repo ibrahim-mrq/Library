@@ -165,6 +165,32 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
+# RTLViewPager
+
+  xml
+``` xml
+  <com.android.application.RTLPager.RTLViewPager
+        android:id="@+id/RTLViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+```
+  java
+``` java
+
+  // set create array list from ViewPagerModel
+        ArrayList<ViewPagerModel> viewPagerModels = new ArrayList<>();
+        // view pager
+        RTLPagerAdapter adapter = new RTLPagerAdapter(getSupportFragmentManager(), viewPagerModels);
+        // use RTL view pager
+        RTLPagerAdapter adapter2 = new RTLPagerAdapter(getSupportFragmentManager(), viewPagerModels, true);
+        // Other use RTL view pager
+        pager.setRtlOriented(true);
+        // set adapter
+        pager.setAdapter(adapter);
+        // set animation
+        pager.setPageTransformer(true, new AnimationViewPage());
+
+``` 
 
 
 # Stateful Layout
@@ -193,7 +219,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
  
  // onCreate
  
-   stateful.showLoading();
+  stateful.showLoading();
    
   stateful.showEmpty();
   
