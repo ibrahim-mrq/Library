@@ -123,3 +123,46 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
         });
 
 ```
+
+
+
+
+# ImagePopup
+
+  java
+``` java
+  ImagePopup popup = new ImagePopup(this);
+                popup.initiatePopup(getDrawable(R.drawable.ic_close));
+				//or
+                popup.initiatePopupWithPicasso(((String) url));
+				//or
+                popup.initiatePopupWithPicasso((Uri) uri);
+				//or
+                popup.initiatePopupWithPicasso((File) imagePathFile);
+                popup.setFullScreen(true);
+                popup.setHideCloseIcon(false);
+                popup.setBackgroundColor(Color.parseColor("#000000"));
+                popup.setOnImageClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+                popup.viewPopup();
+```
+
+# Logger
+
+  java
+``` java
+ // in Activity or MyApplication.class => use in manifest
+   Logger.addLogAdapter(new AndroidLogAdapter());
+
+   Logger.d("Test");
+   Logger.d("Test %s", "test");
+   Logger.d("Test %s", 1);
+   Logger.d("Test %s", list);
+
+```
+
+
