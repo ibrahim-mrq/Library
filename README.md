@@ -95,7 +95,7 @@
 
 # CircleImageView
 
- CircleImageView
+ xml
  
 ```xml
      <com.mrq.library.CircleImage.CircleImageView
