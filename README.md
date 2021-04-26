@@ -26,7 +26,7 @@
  BubbleLinearLayout
 
 ```xml
- <com.android.application.BubbleView.BubbleLinearLayout
+ <com.mrq.library.BubbleView.BubbleLinearLayout
         android:id="@+id/bubbleLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
  BubbleTextView
 
 ```xml
-    <com.android.application.BubbleView.BubbleTextView
+    <com.mrq.library.BubbleView.BubbleTextView
         android:id="@+id/bubbleLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
  BubbleImageView
 
 ```xml
-    <com.android.application.BubbleView.BubbleImageView
+    <com.mrq.library.BubbleView.BubbleImageView
         android:id="@+id/bubbleLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="350dp"
