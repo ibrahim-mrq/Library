@@ -91,3 +91,19 @@
         app:layout_constraintRight_toRightOf="parent" />
 
 ```
+
+
+# CircleImageView
+
+ CircleImageView
+ 
+```xml
+     <com.mrq.library.CircleImage.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp" />
+
+```
