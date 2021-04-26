@@ -107,3 +107,19 @@
         app:civ_border_width="1dp" />
 
 ```
+
+# ColorPickerDialog
+
+  java
+``` java
+final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
+        cp.show();
+        cp.enableAutoClose();
+        cp.setCallback(new ColorPickerCallback() {
+            @Override
+            public void onColorChosen(@ColorInt int color) {
+               String color = String.format("#%06X", (0xFFFFFF & color));
+            }
+        });
+
+```
