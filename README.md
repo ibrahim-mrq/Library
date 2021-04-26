@@ -239,3 +239,72 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
                     });
 
 ```
+
+# TagLayout
+
+  xml
+``` xml
+                <com.mrq.library.TagContainerLayout
+                    android:id="@+id/addPiece_tagLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/addPiece_tv_category"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    app:container_background_color="@color/colorWhite"
+                    app:container_border_color="@null"
+                    app:container_border_radius="0dp"
+                    app:container_border_width="0dp"
+                    app:container_enable_drag="true"
+                    app:container_gravity="right"
+                    app:horizontal_interval="10dp"
+                    app:tag_background_color="@color/colorPrimary"
+                    app:tag_border_color="@color/colorPrimaryDark"
+                    app:tag_border_width="1dp"
+                    app:tag_clickable="true"
+                    app:tag_corner_radius="15dp"
+                    app:tag_cross_color="@color/colorWhite"
+                    app:tag_enable_cross="true"
+                    app:tag_ripple_color="@color/colorWhite"
+                    app:tag_text_color="@color/colorWhite"
+                    app:tag_theme="none"
+                    app:vertical_interval="10dp" />
+
+```
+  java
+``` java
+
+  private TagContainerLayout tagLayout;
+ 
+ // onCreate
+ 
+ tagLayout = findViewById(R.id.tagLayout);
+ 
+ // add 
+ tagLayout.addTag("String");
+ 
+ // onClick
+ 
+ tagLayout.setOnTagClickListener(new TagView.OnTagClickListener() {
+            @Override
+            public void onTagClick(int position, String text) {
+                // ...
+            }
+
+            @Override
+            public void onTagLongClick(final int position, String text) {
+                // ...
+            }
+
+            @Override
+            public void onSelectedTagDrag(int position, String text) {
+                // ...
+            }
+
+            @Override
+            public void onTagCrossClick(int position) {
+                tagLayout.removeTag(position);
+            }
+        });
+
+```
