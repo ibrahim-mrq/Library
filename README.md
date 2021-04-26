@@ -215,13 +215,19 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
   java
 ``` java
 
- private StatefulLayout statefulDetail;
+ private StatefulLayout stateful;
  
  // onCreate
+ 
+  stateful = findViewById(R.id.stateful);
  
   stateful.showLoading();
    
   stateful.showEmpty();
+  
+  // or
+  
+  stateful.showEmpty("Empty");
   
   stateful.showContent();
   
