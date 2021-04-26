@@ -166,3 +166,44 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 ```
 
 
+
+# Stateful Layout
+
+  xml
+``` xml
+    <com.intertech.jeeda.Model.Setting.Stateful.StatefulLayout
+        android:id="@+id/stateful"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.intertech.jeeda.Model.Setting.Stateful.StatefulLayout>
+
+```
+
+  java
+``` java
+
+ private StatefulLayout statefulDetail;
+ 
+ // onCreate
+ 
+   stateful.showLoading();
+   
+  stateful.showEmpty();
+  
+  stateful.showContent();
+  
+  stateful.showOffline(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            // reset your code to connection
+                        }
+                    });
+
+```
