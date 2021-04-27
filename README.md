@@ -1,27 +1,29 @@
-### Features
+# Library Content Details
 
-- BubbleView
+- ### BubbleView
 
-- CircleImageView
+- ### CircleImageView
 
-- ColorPickerDialog
+- ### ColorPickerDialog
 
-- ImagePopup
+- ### ImagePopup
 
-- Logger
+- ### Logger
 
-- RTLViewPager
+- ### RTLViewPager
 
-- StatefulLayout
+- ### StatefulLayout
 
-- TagContainerLayout
+- ### TagContainerLayout
 
-- Toasty
+- ### Toasty
 
-- YoYo
+- ### YoYo
+
+------
 
 
-# BubbleView
+#### BubbleView
 
  BubbleLinearLayout
 
