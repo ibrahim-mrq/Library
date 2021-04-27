@@ -308,3 +308,41 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
         });
 
 ```
+
+# Toasty
+
+  java
+  
+``` java
+       // success
+        Toasty.success(this, "Hello word").show();
+        Toasty.success(this, "Hello word", Toasty.LENGTH_SHORT).show();
+        Toasty.success(this, "Hello word", Toasty.LENGTH_SHORT, true).show();
+
+        // warning
+        Toasty.warning(this, "Hello word").show();
+        Toasty.warning(this, "Hello word", Toasty.LENGTH_SHORT).show();
+        Toasty.warning(this, "Hello word", Toasty.LENGTH_SHORT, true).show();
+
+        // info
+        Toasty.info(this, "Hello word").show();
+        Toasty.info(this, "Hello word", Toasty.LENGTH_SHORT).show();
+        Toasty.info(this, "Hello word", Toasty.LENGTH_SHORT, true).show();
+
+        // error
+        Toasty.error(this, "Hello word").show();
+        Toasty.error(this, "Hello word", Toasty.LENGTH_SHORT).show();
+        Toasty.error(this, "Hello word", Toasty.LENGTH_SHORT, true).show();
+
+        // normal
+        Toasty.normal(this, "Hello word").show();
+        Toasty.normal(this, "Hello word", ToastyUtils.getDrawable(this, R.drawable.img)).show();
+        Toasty.normal(this, "Hello word", Toasty.LENGTH_SHORT).show();
+        Toasty.normal(this, "Hello word", Toasty.LENGTH_SHORT, ToastyUtils.getDrawable(this, R.drawable.img)).show();
+        Toasty.normal(this, "Hello word", Toasty.LENGTH_SHORT, ToastyUtils.getDrawable(this, R.drawable.img) , true).show();
+
+        // custom
+        Toasty.custom(this, "Hello word", ToastyUtils.getDrawable(this, R.drawable.img) , Toasty.LENGTH_SHORT, true).show();
+
+
+```
