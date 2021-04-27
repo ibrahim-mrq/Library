@@ -1,6 +1,6 @@
 # Library Content Details
 
-- #### BubbleView
+**BubbleView**
 
 - ### CircleImageView
 
