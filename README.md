@@ -2,7 +2,6 @@
 
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
-   // asdasdasd
 
 ## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView")
 
