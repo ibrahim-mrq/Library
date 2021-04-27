@@ -1,24 +1,25 @@
 # Library Content Details
 
-## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+
+## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
 
 ## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView")
 
-## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog")
 
-## [ImagePopup](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup")
 
-## [Logger](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
 
-## [RTLViewPager](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager")
 
-## [StatefulLayout](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout")
 
-## [TagContainerLayout](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout")
 
-## [Toasty](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty")
 
-## [YOYO](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
+## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")
 
 ------
 
