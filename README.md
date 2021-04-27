@@ -349,3 +349,27 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 
 ```
+
+
+## YoYo
+
+  java
+  
+``` java
+
+
+   YoYo.with(Techniques.Tada)
+                .duration(700)
+                .repeat(5)
+                .playOn(textView);
+
+        // or 
+        YoYo.with(Techniques.BounceIn)
+                .duration(700)
+                .repeat(5)
+                .playOn(textView);
+   
+
+
+```
+
