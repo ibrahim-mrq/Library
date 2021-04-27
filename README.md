@@ -23,7 +23,7 @@
 ------
 
 
-#### BubbleView
+## BubbleView
 
  BubbleLinearLayout
 
@@ -95,7 +95,7 @@
 ```
 
 
-# CircleImageView
+## CircleImageView
 
  xml
  
@@ -110,7 +110,7 @@
 
 ```
 
-# ColorPickerDialog
+## ColorPickerDialog
 
   java
 ``` java
@@ -129,7 +129,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 
 
-# ImagePopup
+## ImagePopup
 
   java
 ``` java
@@ -153,7 +153,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
                 popup.viewPopup();
 ```
 
-# Logger
+## Logger
 
   java
 ``` java
@@ -167,7 +167,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
-# RTLViewPager
+## RTLViewPager
 
   xml
 ``` xml
@@ -195,7 +195,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 ``` 
 
 
-# Stateful Layout
+## Stateful Layout
 
   xml
 ``` xml
@@ -242,7 +242,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
-# TagLayout
+## TagLayout
 
   xml
 ``` xml
@@ -311,7 +311,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
-# Toasty
+## Toasty
 
   java
   
