@@ -113,7 +113,9 @@
 ## ColorPickerDialog
 
   java
+  
 ``` java
+
 final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
         cp.show();
         cp.enableAutoClose();
@@ -171,7 +173,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
   xml
 ``` xml
-  <com.android.application.RTLPager.RTLViewPager
+  <com.mrq.library.RTLPager.RTLViewPager
         android:id="@+id/RTLViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -199,7 +201,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
   xml
 ``` xml
-    <com.intertech.jeeda.Model.Setting.Stateful.StatefulLayout
+    <com.mrq.library.Stateful.StatefulLayout
         android:id="@+id/stateful"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -210,7 +212,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.intertech.jeeda.Model.Setting.Stateful.StatefulLayout>
+    </com.mrq.library.Stateful.StatefulLayout>
 
 ```
 
