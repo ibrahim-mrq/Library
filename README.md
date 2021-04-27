@@ -1,6 +1,6 @@
 # Library Content Details
 
-1. **BubbleView**
+#### [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview "BubbleView")
 
 - ### CircleImageView
 
