@@ -47,7 +47,7 @@
 
         </RelativeLayout>
 
-    </com.android.application.BubbleView.BubbleLinearLayout>
+    </com.mrq.library.BubbleView.BubbleLinearLayout>
 
 ```
 
