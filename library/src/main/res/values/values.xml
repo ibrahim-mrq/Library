@@ -46,7 +46,7 @@
     <style name="stfImage">
         <item name="android:layout_width">@dimen/stfImageSize</item>
         <item name="android:layout_height">@dimen/stfImageSize</item>
-        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:tint">@color/stfImageColor</item>
     </style>
 
     <style name="stfMessage">
