@@ -248,7 +248,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
   xml
 ``` xml
-                <com.mrq.library.TagContainerLayout
+                <com.mrq.library.TagLayout.TagContainerLayout
                     android:id="@+id/addPiece_tagLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
