@@ -1,4 +1,4 @@
-# Library Content Details
+# Library [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
