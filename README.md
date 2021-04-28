@@ -1,6 +1,23 @@
 # Library [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
+# Usage
 
+1. Gradle dependency:
+
+```
+allprojects {
+   repositories {
+      	jcenter()
+       	maven { url "https://jitpack.io" }  //Make sure to add this in your project for uCrop
+   }
+}
+
+```
+
+```
+implementation 'com.github.ibrahim-mrq:library:1.0.3'
+
+```
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
 
