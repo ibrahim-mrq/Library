@@ -17,12 +17,8 @@ allprojects {
 ```
 implementation 'com.github.ibrahim-mrq:library:1.0.3'
 ```
+                                                                                                                                                                                                                                                                                                                                                                                                                                
 
-```
-
-
-
-```
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
 
