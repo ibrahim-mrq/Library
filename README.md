@@ -41,6 +41,7 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 ## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")
 
 
+# Content Details ...
 
 ## BubbleView
 
