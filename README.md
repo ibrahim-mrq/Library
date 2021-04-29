@@ -21,25 +21,25 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
          	                                        
 # Content																																																					
 
-## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
+## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView") => Shape Background Views
 
-## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView")
+## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView") => Circle Image
 
-## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog")
+## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog") => Color Dialog
 
-## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup")
+## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup") => Image Dialog
 
-## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
+## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger") => Logcat Modified
 
-## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager")
+## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager") => [Right , Left] viewPager
 
-## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout")
+## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout") => [Loading , Rmpty , , NoConnection , Other] Layout
 
-## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout")
+## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout") => Choose From Lest
 
-## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty")
+## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty") => Toast Modified
 
-## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO") df 
+## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO") => Animation TextView 
 
 
 # Content Details ...
