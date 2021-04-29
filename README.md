@@ -1,5 +1,3 @@
-[![](https://jitpack.io/v/ibrahim-mrq/Library.svg)](https://jitpack.io/#ibrahim-mrq/Library)
-
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
 
