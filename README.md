@@ -22,25 +22,24 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 # Content																																																					
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
-#### => Shape Background Views
 
-## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView") => Circle Image
+## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView")
 
-## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog") => Color Dialog
+## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog") 
 
-## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup") => Image Dialog
+## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup") 
 
-## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger") => Logcat Modified
+## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger") 
 
-## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager") => [Right , Left] viewPager
+## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager") 
 
-## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout") => [Loading , Rmpty , , NoConnection , Other] Layout
+## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout") 
 
-## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout") => Choose From Lest
+## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout")
 
-## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty") => Toast Modified
+## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty")
 
-## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO") => Animation TextView 
+## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")=
 
 
 # Content Details ...
