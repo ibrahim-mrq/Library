@@ -1,6 +1,5 @@
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
-
 ## Usage
 
 1. Gradle dependency:
