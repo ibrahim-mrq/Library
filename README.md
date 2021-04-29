@@ -25,21 +25,21 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 
 ## [CircleImageView](https://github.com/ibrahim-mrq/library#circleimageview-1 "CircleImageView")
 
-## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog") 
+## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog")
 
-## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup") 
+## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup")
 
-## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger") 
+## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
 
-## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager") 
+## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager")
 
-## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout") 
+## [StatefulLayout](https://github.com/ibrahim-mrq/library#stateful-layout "StatefulLayout")
 
 ## [TagContainerLayout](https://github.com/ibrahim-mrq/library#taglayout "TagContainerLayout")
 
 ## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty")
 
-## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")=
+## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")
 
 
 # Content Details ...
