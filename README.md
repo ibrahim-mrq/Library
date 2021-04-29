@@ -1,6 +1,7 @@
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
 
+[![](https://jitpack.io/v/private#ibrahim-mrq/library.svg)](https://jitpack.io/private#ibrahim-mrq/library)
 
 ## Usage
 
