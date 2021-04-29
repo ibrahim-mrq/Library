@@ -10,10 +10,11 @@
 allprojects {
    repositories {
       	jcenter()
-       	maven { url "https://jitpack.io" }  //Make sure to add this in your project for uCrop
+       	maven { url "https://jitpack.io" }  //Make sure to add this in your project 
    }
 }
 ```
+and this
 
 ```
 implementation 'com.github.ibrahim-mrq:library:1.0.3'
