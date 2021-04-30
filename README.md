@@ -20,7 +20,6 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 ```
    
 <br/>
-<br/>
 
 # Content																																																					
 
