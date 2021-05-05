@@ -397,31 +397,31 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ### Images
 
-BubbleView
+> BubbleView
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/bubble_view.gif?token=ALCGV4IE2ZFM2HJLWKXPLE3ASJ5S6)
 
-CircleImageView
+> CircleImageView
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/circle_image_view.png?token=ALCGV4IA7K3WDVJITQ3NPG3ASJ5QK)
 
-ColorPickerDialog
+> ColorPickerDialog
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/color_picker_dialog.png?token=ALCGV4P4WBIPBTWMELUU3MTASJ5UM)
 
-ImagePopup
+> ImagePopup
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/image_popup.gif?token=ALCGV4LZCCPLQT4E7G5DE23ASJ5VU)
 
-RTLViewPager
+> RTLViewPager
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager1.gif?token=ALCGV4KRLGXMKTZY7BDWZDDASJ5WW)![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager2.gif?token=ALCGV4JUQJAJ5CGRB74X5PDASJ5ZI)
+![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager1.gif?token=ALCGV4KRLGXMKTZY7BDWZDDASJ5WW)  ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager2.gif?token=ALCGV4JUQJAJ5CGRB74X5PDASJ5ZI)
 
-StatefulLayout
+> StatefulLayout
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/stateful_layout.gif?token=ALCGV4NJYF55BWINKXYBWXTASJ52E)
 
-TagContainerLayout
+> TagContainerLayout
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/tag_container_layout.png?token=ALCGV4NZC6YFMUHC2ZOMSUTASJ524)
 
