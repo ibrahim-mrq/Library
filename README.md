@@ -422,7 +422,6 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/stateful_layout.gif?token=ALCGV4NJYF55BWINKXYBWXTASJ52E)
 
 > TagContainerLayout
-
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/tag_container_layout.png?token=ALCGV4NZC6YFMUHC2ZOMSUTASJ524)
 
 > Toasty
