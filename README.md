@@ -1,5 +1,27 @@
-# Library [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
+[![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
+
+## Usage
+
+1. Gradle dependency:
+
+```
+allprojects {
+   repositories {
+      	jcenter()
+       	maven { url "https://jitpack.io" }  //Make sure to add this in your project 
+   }
+}
+```
+2. and add this
+
+```
+implementation 'com.github.ibrahim-mrq:library:1.0.3'
+```
+   
+<br/>
+
+# Content																																																					
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
 
@@ -22,6 +44,7 @@
 ## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")
 
 
+# Content Details ...
 
 ## BubbleView
 
