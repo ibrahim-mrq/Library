@@ -415,11 +415,7 @@ ImagePopup
 
 RTLViewPager
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager1.gif?token=ALCGV4KRLGXMKTZY7BDWZDDASJ5WW)
-
-RTLViewPager
-
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager2.gif?token=ALCGV4JUQJAJ5CGRB74X5PDASJ5ZI)
+![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager1.gif?token=ALCGV4KRLGXMKTZY7BDWZDDASJ5WW)![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager2.gif?token=ALCGV4JUQJAJ5CGRB74X5PDASJ5ZI)
 
 StatefulLayout
 
@@ -429,7 +425,7 @@ TagContainerLayout
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/tag_container_layout.png?token=ALCGV4NZC6YFMUHC2ZOMSUTASJ524)
 
-Toasty
+> Toasty
 
 ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/toasty.png?token=ALCGV4JSQMUHRJ7XGO2NHQDASJ54M)
 
