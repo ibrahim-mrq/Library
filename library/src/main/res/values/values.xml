@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">library</string>
     <!--    TODO : custom Toast-->
     <color name="defaultTextColor">#FFFFFF</color>
     <color name="errorColor">#D50000</color>
