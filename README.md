@@ -403,31 +403,31 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 > CircleImageView
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/circle_image_view.png?token=ALCGV4IA7K3WDVJITQ3NPG3ASJ5QK)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/circle_image_view.png?raw=true)
 
 > ColorPickerDialog
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/color_picker_dialog.png?token=ALCGV4P4WBIPBTWMELUU3MTASJ5UM)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/color_picker_dialog.png?raw=true)
 
 > ImagePopup
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/image_popup.gif?token=ALCGV4LZCCPLQT4E7G5DE23ASJ5VU)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/image_popup.gif?raw=true)
 
 > RTLViewPager
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager1.gif?token=ALCGV4KRLGXMKTZY7BDWZDDASJ5WW)  ![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/rtl_view_pager2.gif?token=ALCGV4JUQJAJ5CGRB74X5PDASJ5ZI)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/rtl_view_pager1.gif?raw=true)  ![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/rtl_view_pager2.gif?raw=true)
 
 > StatefulLayout
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/stateful_layout.gif?token=ALCGV4NJYF55BWINKXYBWXTASJ52E)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/stateful_layout.gif?raw=true)
 
 > TagContainerLayout
 > 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/tag_container_layout.png?token=ALCGV4NZC6YFMUHC2ZOMSUTASJ524)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/tag_container_layout.png?raw=true)
 
 > Toasty
 
-![](https://raw.githubusercontent.com/ibrahim-mrq/library/master/app/src/main/assets/toasty.png?token=ALCGV4JSQMUHRJ7XGO2NHQDASJ54M)
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/toasty.png?raw=true)
 
 
 <br/>
