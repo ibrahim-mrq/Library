@@ -1,4 +1,4 @@
-package com.mrq.library.Setting;
+package com.mrq.library.Z_setting;
 
 import android.content.Context;
 import android.database.Cursor;

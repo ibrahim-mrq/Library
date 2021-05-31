@@ -1,4 +1,4 @@
-package com.mrq.library.Setting;
+package com.mrq.library.Z_setting;
 
 import android.annotation.TargetApi;
 import android.content.Context;

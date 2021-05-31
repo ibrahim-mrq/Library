@@ -1,11 +1,14 @@
-package com.mrq.library.Setting;
+package com.mrq.library.Z_setting;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -17,9 +20,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
+import android.text.format.DateFormat;
 import android.util.Base64;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
@@ -30,9 +36,13 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import com.mrq.library.Logger.Logger;
+import com.mrq.library.R;
 import com.mrq.library.Toasty.Toasty;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.Date;
 
 public final class Utils {
 
@@ -141,7 +151,8 @@ public final class Utils {
         alertDialogBuilder.show();
     }
 
-    public void showAlertDialogWithIcon(@NonNull Context context, String title, @Nullable String message, @DrawableRes int icon, boolean isCancelable) {
+    public void showAlertDialogWithIcon(@NonNull Context context, String title, @Nullable String message,
+                                        @DrawableRes int icon, boolean isCancelable) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setTitle(title);
         alertDialogBuilder.setMessage(message)
@@ -218,11 +229,18 @@ public final class Utils {
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
     }
 
-    public int dp(Context context, float value) {
-        if (value == 0) {
+    public int dpToPx(int dp) {
+        if (dp == 0) {
             return 0;
         }
-        return (int) Math.ceil(context.getResources().getDisplayMetrics().density * value);
+        return (int) Math.ceil(Resources.getSystem().getDisplayMetrics().density * dp);
+    }
+
+    public static int pxToDp(int px) {
+        if (px == 0) {
+            return 0;
+        }
+        return (int) (px / Resources.getSystem().getDisplayMetrics().density);
     }
 
     public void set_RTL_layout(Activity context) {
@@ -237,5 +255,51 @@ public final class Utils {
         }
     }
 
+    // TODO : You need a permission
+    public void takeScreenShot(Activity activity, View view) {
+
+        Date date = new Date();
+        CharSequence format = DateFormat.format("yyyy-MM-dd_hh:mm:ss", date);
+
+        // TODO : create file in ExternalStorage with name "app name"
+        try {
+            String dirPath = Environment.getExternalStorageDirectory().toString() + "/"
+                    + activity.getResources().getString(R.string.app_name);
+            File fileDir = new File(dirPath);
+            if (!fileDir.exists()) {
+                fileDir.mkdir();
+                fileDir.exists();
+            }
+
+            // TODO : name image
+            String path = dirPath + "/" + activity.getResources().getString(R.string.app_name) + "-" + format + ".jpeg";
+
+            // TODO : take a screen shot
+            view.setDrawingCacheEnabled(true);
+            Bitmap bitmap = Bitmap.createBitmap(view.getDrawingCache());
+            view.setDrawingCacheEnabled(false);
+            // TODO : save a screen shot
+            File imageFile = new File(path);
+            FileOutputStream outputStream = new FileOutputStream(imageFile);
+            int quality = 100;
+            bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
+            outputStream.flush();
+            outputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static int getAppVersion(Context context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager()
+                    .getPackageInfo(context.getPackageName(), 0);
+            return packageInfo.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e("AppVersion", "Could not get package name: " + e);
+        }
+        return -1;
+    }
 
 }

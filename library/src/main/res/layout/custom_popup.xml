@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@drawable/stf_ic_empty"
+        android:src="@android:drawable/sym_action_call"
         app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
         app:layout_constraintLeft_toRightOf="@id/guideline_lift"
         app:layout_constraintRight_toLeftOf="@id/guideline_right"

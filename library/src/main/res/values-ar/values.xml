@@ -27,18 +27,18 @@
     <dimen name="stfImageSize">80dp</dimen>
     <dimen name="stfProgressSize">60dp</dimen>
 
-    <string name="stfButtonText">Try again</string>
-    <string name="stfEmptyMessage">Empty</string>
-    <string name="stfErrorMessage">An error has occurred, please try again later</string>
-    <string name="stfLoadingMessage">loading..</string>
-    <string name="stfLocationOffMessage">Please enable location services</string>
-    <string name="stfOfflineMessage">Please check your internet connection</string>
+    <string name="stfButtonText">أعد المحاولة</string>
+    <string name="stfEmptyMessage">لا يوجد عناصر</string>
+    <string name="stfErrorMessage">لقد حدث خطأ، رجاء أعد المحاولة لاحقا</string>
+    <string name="stfLoadingMessage">جار التحميل..</string>
+    <string name="stfLocationOffMessage">الرجاء تمكين خدمات الموقع</string>
+    <string name="stfOfflineMessage">يرجى التحقق من اتصالك بالانترنت</string>
 
     <style name="stfButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">10dp</item>
         <item name="android:background">@drawable/ripple</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:gravity">center</item>
     </style>
 
@@ -202,7 +202,6 @@
     </style>
 
     // TODO : fastscroll__style
-
         <attr name="fastscroll__style" format="reference" />
         <declare-styleable name="fastscroll__fastScroller">
             <attr name="fastscroll__bubbleColor" format="color" />
@@ -210,7 +209,5 @@
             <attr name="fastscroll__textColor" format="color" />
             <attr name="fastscroll__bubbleTextAppearance" format="reference" />
         </declare-styleable>
-
-
 
 </resources>

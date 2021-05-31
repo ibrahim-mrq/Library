@@ -1,4 +1,4 @@
-package com.mrq.library.Setting;
+package com.mrq.library.Z_setting;
 
 import android.os.Build;
 
@@ -116,4 +116,17 @@ public class CryptoUtil {
         String plainStr = new String(utf8, charSet);
         return plainStr;
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static void main() throws Exception {
+        CryptoUtil cryptoUtil = new CryptoUtil();
+        String key = "ezeon8547";
+        String plain = "This is an important message";
+        String enc = cryptoUtil.encrypt(key, plain);
+        System.out.println("Original text: " + plain);
+        System.out.println("Encrypted text: " + enc);
+        String plainAfter = cryptoUtil.decrypt(key, enc);
+        System.out.println("Original text after decryption: " + plainAfter);
+    }
+
 }
