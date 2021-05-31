@@ -21,7 +21,7 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
    
 <br/>
 
-# Content																																																					
+# Content																										
 
 ## [BubbleView](https://github.com/ibrahim-mrq/library#bubbleview-1 "BubbleView")
 
@@ -30,6 +30,8 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 ## [ColorPickerDialog](https://github.com/ibrahim-mrq/library#colorpickerdialog-1 "ColorPickerDialog")
 
 ## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup")
+
+## [ImageZoom](https://github.com/ibrahim-mrq/library#imagezoom-1 "ImageZoom")
 
 ## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
 
@@ -151,9 +153,6 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
-
-
-
 ## ImagePopup
 
   java
@@ -177,6 +176,42 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
                 });
                 popup.viewPopup();
 ```
+
+## ImageZoom
+
+  xml
+``` xml
+    <com.mrq.application.photoview.ImageZoom
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+```
+
+  java
+``` java
+  ImageZoom photoView =  findViewById(R.id.photo_view);
+        photoView.setImageResource(R.drawable.img);
+        photoView.setOnDoubleTapListener(new GestureDetector.OnDoubleTapListener() {
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                return false;
+            }
+
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                return false;
+            }
+
+            @Override
+            public boolean onDoubleTapEvent(MotionEvent e) {
+                return false;
+            }
+        });
+	
+```
+
 
 ## Logger
 
@@ -392,8 +427,43 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
                 .duration(700)
                 .repeat(5)
                 .playOn(textView);
-   
-
-
 ```
+
+
+### Images
+
+> BubbleView
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/bubble_view.gif?raw=true)
+
+> CircleImageView
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/circle_image_view.png?raw=true)
+
+> ColorPickerDialog
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/color_picker_dialog.png?raw=true)
+
+> ImagePopup
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/image_popup.gif?raw=true)
+
+> RTLViewPager
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/rtl_view_pager1.gif?raw=true)  ![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/rtl_view_pager2.gif?raw=true)
+
+> StatefulLayout
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/stateful_layout.gif?raw=true)
+
+> TagContainerLayout
+> 
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/tag_container_layout.png?raw=true)
+
+> Toasty
+
+![](https://github.com/ibrahim-mrq/library/blob/master/app/src/main/assets/toasty.png?raw=true)
+
+
+<br/>
 
