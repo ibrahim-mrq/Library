@@ -31,6 +31,8 @@ implementation 'com.github.ibrahim-mrq:library:1.0.3'
 
 ## [ImagePopup](https://github.com/ibrahim-mrq/library#imagepopup-1 "ImagePopup")
 
+## [ImageZoom](https://github.com/ibrahim-mrq/library#imagezoom-1 "ImageZoom")
+
 ## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
 
 ## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager")
@@ -177,6 +179,29 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
                 });
                 popup.viewPopup();
 ```
+
+## ImageZoom
+
+  xml
+``` xml
+    <com.mrq.application.photoview.ImageZoom
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+```
+
+  java
+``` java
+    <com.mrq.application.photoview.ImageZoom
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+```
+
 
 ## Logger
 
