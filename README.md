@@ -153,9 +153,6 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 ```
 
-
-
-
 ## ImagePopup
 
   java
@@ -194,12 +191,25 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
   java
 ``` java
-    <com.mrq.application.photoview.ImageZoom
-        android:id="@+id/photo_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img" />
+  ImageZoom photoView =  findViewById(R.id.photo_view);
+        photoView.setImageResource(R.drawable.img);
+        photoView.setOnDoubleTapListener(new GestureDetector.OnDoubleTapListener() {
+            @Override
+            public boolean onSingleTapConfirmed(MotionEvent e) {
+                return false;
+            }
+
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                return false;
+            }
+
+            @Override
+            public boolean onDoubleTapEvent(MotionEvent e) {
+                return false;
+            }
+        });
+	
 ```
 
 
