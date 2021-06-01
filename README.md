@@ -33,6 +33,8 @@ implementation 'com.github.ibrahim-mrq:library:1.0.4'
 
 ## [ImageZoom](https://github.com/ibrahim-mrq/library#imagezoom-1 "ImageZoom")
 
+## [RoundView](https://github.com/ibrahim-mrq/library#roundview-1 "RoundView")
+
 ## [Logger](https://github.com/ibrahim-mrq/library#logger-1 "Logger")
 
 ## [RTLViewPager](https://github.com/ibrahim-mrq/library#rtlviewpager-1 "RTLViewPager")
@@ -211,6 +213,52 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
         });
 	
 ```
+
+
+
+## RoundView
+
+  xml
+``` xml
+   <com.mrq.library.RoundView.RoundView
+        android:id="@+id/roundview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="80dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="center" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/v_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+```
+
+  java
+``` java
+        RoundView roundview = findViewById(R.id.roundview);
+        TabLayout tabLayout = findViewById(R.id.tab);
+        ViewPager pager = findViewById(R.id.v_pager);
+
+        ArrayList<TabClass> tabs = new ArrayList<>();
+        tabs.add(new TabClass("ASD", new BlankFragment()));
+        tabs.add(new TabClass("ASD", new BlankFragment()));
+        tabs.add(new TabClass("ASD", new BlankFragment()));
+        tabs.add(new TabClass("ASD", new BlankFragment()));
+        TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabs);
+        pager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(pager);
+        roundview.setViewPager(pager, true);
+	
+```
+
+
+
+
 
 
 ## Logger
