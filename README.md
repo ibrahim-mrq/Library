@@ -1,9 +1,16 @@
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
 
-## Usage
+## Getting Started
+<br/>
+These instructions will help you set up this library easily on your current project and working in no time. You only need a few configurations to start working!
+<br/>
 
-1. Gradle dependency:
+## Installing
+<br/>
+To be able to use the following library, you will need to add the following gradle dependency in your
+<br/>
+1. build.gradle Project level
 
 ```
 allprojects {
@@ -13,12 +20,15 @@ allprojects {
    }
 }
 ```
-2. and add this
+2. build.gradle module
 
 ```
 implementation 'com.github.ibrahim-mrq:library:1.0.4'
 ```
    
+<br/>
+
+That is the basic set up needed to be able to use the library in your applications!
 <br/>
 
 # Content																										
