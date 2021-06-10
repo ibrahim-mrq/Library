@@ -3,6 +3,11 @@ package com.mrq.library.YoYo;
 import android.animation.ObjectAnimator;
 import android.view.View;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class BounceInAnimator extends BaseViewAnimator {
     @Override
     public void prepare(View target) {

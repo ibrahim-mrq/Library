@@ -1,6 +1,5 @@
 package com.mrq.library;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +25,6 @@ public class AdapterStringAdapter extends RecyclerView.Adapter<AdapterStringAdap
         AdapterStringAdapter.mContext = mContext;
     }
 
-
     @NonNull
     @Override
     public AdapterStringViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,12 +36,10 @@ public class AdapterStringAdapter extends RecyclerView.Adapter<AdapterStringAdap
     public void onBindViewHolder(@NonNull AdapterStringViewHolder holder, final int position) {
         final String model = list.get(position);
         holder.bind(model);
-
     }
 
     @Override
     public int getItemCount() {
-        //    return list.size();
         return (list != null ? list.size() : 0);
     }
 
@@ -67,7 +63,6 @@ public class AdapterStringAdapter extends RecyclerView.Adapter<AdapterStringAdap
 
         }
 
-        @SuppressLint("SetTextI18n")
         private void bind(String model) {
             tv_title.setText(model);
         }

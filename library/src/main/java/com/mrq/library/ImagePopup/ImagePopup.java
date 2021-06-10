@@ -23,10 +23,15 @@ import com.squareup.picasso.Picasso;
 
 import java.io.File;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
     private Context context;
     private PopupWindow popupWindow;
-    View layout;
+    private View layout;
     private ImageView imageView;
     private int windowHeight = 0;
     private int windowWidth = 0;

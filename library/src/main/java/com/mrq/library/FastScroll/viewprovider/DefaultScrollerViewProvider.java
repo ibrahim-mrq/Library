@@ -11,6 +11,11 @@ import androidx.core.content.ContextCompat;
 import com.mrq.library.FastScroll.Utils;
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class DefaultScrollerViewProvider extends ScrollerViewProvider {
 
     protected View bubble;

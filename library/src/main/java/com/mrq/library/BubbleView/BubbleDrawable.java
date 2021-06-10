@@ -14,6 +14,11 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class BubbleDrawable extends Drawable {
     private RectF mRect;
     private Path mPath = new Path();

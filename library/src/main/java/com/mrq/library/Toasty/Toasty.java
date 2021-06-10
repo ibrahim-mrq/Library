@@ -20,6 +20,11 @@ import androidx.annotation.StringRes;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class Toasty {
     private static final Typeface LOADED_TOAST_TYPEFACE = Typeface.create("sans-serif-condensed", Typeface.NORMAL);
     private static Typeface currentTypeface = LOADED_TOAST_TYPEFACE;

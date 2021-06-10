@@ -2,6 +2,11 @@ package com.mrq.library.TagLayout;
 
 import android.graphics.Color;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class ColorFactory {
 
     public static final String BG_COLOR_ALPHA = "33";

@@ -77,6 +77,7 @@ public class ValidatePasswordActivity extends AppCompatActivity {
         Pattern uppercase = Pattern.compile("[A-Z]");
         Pattern digit = Pattern.compile("[0-9]");
         Pattern specialChar = Pattern.compile("[!@#$%^&*()_-]");
+        Pattern pattern = Pattern.compile("[ـ-ي]");
 
         if (!lowercase.matcher(password).find()) {
             tvLowercase.setTextColor(getResources().getColor(R.color.darkGray));
@@ -116,6 +117,19 @@ public class ValidatePasswordActivity extends AppCompatActivity {
         } else {
             tvCount.setTextColor(getResources().getColor(R.color.bulletproof));
             imageCount.setImageResource(R.drawable.ic_check2);
+        }
+
+        if (pattern.matcher(password).find() ) {
+            tvUppercase.setTextColor(getResources().getColor(R.color.darkGray));
+            imageUppercase.setImageResource(R.drawable.ic_check);
+            tvDigit.setTextColor(getResources().getColor(R.color.darkGray));
+            imageDigit.setImageResource(R.drawable.ic_check);
+            tvCount.setTextColor(getResources().getColor(R.color.darkGray));
+            imageCount.setImageResource(R.drawable.ic_check);
+            tvSpecialChar.setTextColor(getResources().getColor(R.color.darkGray));
+            imageSpecialChar.setImageResource(R.drawable.ic_check);
+            tvLowercase.setTextColor(getResources().getColor(R.color.darkGray));
+            imageLowercase.setImageResource(R.drawable.ic_check);
         }
 
         if (password.length() == 0) {

@@ -1,7 +1,11 @@
 package com.mrq.library.Z_setting;
 
-
 import java.util.ArrayList;
+
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
 
 public class NumberToWords {
     String[] singles = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"};

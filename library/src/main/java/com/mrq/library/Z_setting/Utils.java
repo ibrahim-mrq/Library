@@ -1,5 +1,6 @@
 package com.mrq.library.Z_setting;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -7,14 +8,17 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -22,12 +26,19 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.text.format.DateFormat;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.TextView;
 
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
@@ -42,7 +53,14 @@ import com.mrq.library.Toasty.Toasty;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Date;
+
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
 
 public final class Utils {
 
@@ -59,7 +77,13 @@ public final class Utils {
     }
 
     private String emailFormat() {
-        return "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        return "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +
+                "\\@" +
+                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" +
+                "(" +
+                "\\." +
+                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" +
+                ")+";
     }
 
     public boolean isEmailFormat(Activity context, String email) {
@@ -67,6 +91,53 @@ public final class Utils {
             Toasty.error(context, "تأكد من ادخال اليميل بالشكل الصحيح").show();
             return false;
         } else return true;
+    }
+
+    public String NumberToWord(int number) {
+        NumberToWords instance_name = new NumberToWords();
+        instance_name.startPrint(number);
+        StringBuffer in_words = new StringBuffer();
+        for (String s : instance_name.output) {
+            in_words.append(s);
+            in_words.append(" ");
+        }
+        return String.valueOf(in_words);
+    }
+
+    public void makeTextChartColor(@NonNull String text, @NonNull String word, TextView textView, String color) {
+        String htmlText = text.replace(word, "<font color='" + color + "'>" + word + "</font>");
+        textView.setText(Html.fromHtml(htmlText));
+    }
+
+    public void makeTextBold(String sentence, String word, TextView textView) {
+        SpannableStringBuilder builder = new SpannableStringBuilder();
+        int startIndex = sentence.indexOf(word.toLowerCase().trim());
+        int endIndex = startIndex + word.toLowerCase().trim().length();
+        SpannableString spannableString = new SpannableString(sentence);
+        StyleSpan boldSpan = new StyleSpan(Typeface.BOLD);
+        spannableString.setSpan(boldSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannableString.setSpan(new ForegroundColorSpan(Color.RED), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); //To change color of text
+        builder.append(spannableString);
+        textView.setText(builder, TextView.BufferType.SPANNABLE);
+
+    }
+
+    private String getKeyHash(Activity context) {
+        String keyHash = "";
+        try {
+            @SuppressLint("PackageManagerGetSignatures") PackageInfo info = context.getPackageManager().getPackageInfo(
+                    context.getApplicationContext().getPackageName(),
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                keyHash = Base64.encodeToString(md.digest(), Base64.DEFAULT);
+            }
+        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException ignored) {
+            keyHash = "Exception";
+        }
+        return keyHash;
     }
 
     public String getDisplayMatrix(Activity context) {
@@ -151,8 +222,7 @@ public final class Utils {
         alertDialogBuilder.show();
     }
 
-    public void showAlertDialogWithIcon(@NonNull Context context, String title, @Nullable String message,
-                                        @DrawableRes int icon, boolean isCancelable) {
+    public void showAlertDialogWithIcon(@NonNull Context context, String title, @Nullable String message, @DrawableRes int icon, boolean isCancelable) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setTitle(title);
         alertDialogBuilder.setMessage(message)
@@ -255,8 +325,8 @@ public final class Utils {
         }
     }
 
-    // TODO : You need a permission
     public void takeScreenShot(Activity activity, View view) {
+        // TODO : You need a permission
 
         Date date = new Date();
         CharSequence format = DateFormat.format("yyyy-MM-dd_hh:mm:ss", date);
@@ -291,7 +361,7 @@ public final class Utils {
 
     }
 
-    public static int getAppVersion(Context context) {
+    public int getAppVersion(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
                     .getPackageInfo(context.getPackageName(), 0);

@@ -1,8 +1,12 @@
 
 package com.mrq.library.YoYo;
 
-public enum Techniques {
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
 
+public enum Techniques {
 
     BounceIn(BounceInAnimator.class),
     Tada(TadaAnimator.class);

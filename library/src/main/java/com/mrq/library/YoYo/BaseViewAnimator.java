@@ -8,6 +8,11 @@ import android.view.animation.Interpolator;
 
 import androidx.core.view.ViewCompat;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public abstract class BaseViewAnimator {
 
     public static final long DURATION = 1000;

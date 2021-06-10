@@ -16,6 +16,11 @@ import androidx.appcompat.widget.AppCompatSeekBar;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 class MaterialColorPickerTextSeekBar extends AppCompatSeekBar {
 
     private Paint textPaint;

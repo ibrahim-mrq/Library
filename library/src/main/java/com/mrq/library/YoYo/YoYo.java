@@ -10,6 +10,11 @@ import androidx.core.view.ViewCompat;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class YoYo {
 
     private static final long DURATION = BaseViewAnimator.DURATION;

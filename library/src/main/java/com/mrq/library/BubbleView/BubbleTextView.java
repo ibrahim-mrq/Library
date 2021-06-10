@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 @SuppressLint("AppCompatCustomView")
 public class BubbleTextView extends TextView {
     private BubbleDrawable bubbleDrawable;

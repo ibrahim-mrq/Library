@@ -19,6 +19,11 @@ import androidx.annotation.StringRes;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class StatefulLayout extends LinearLayout {
 
     private static final String MSG_ONE_CHILD = "StatefulLayout must have one child!";

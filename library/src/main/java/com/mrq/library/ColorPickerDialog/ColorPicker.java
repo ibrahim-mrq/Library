@@ -26,8 +26,13 @@ import com.mrq.library.R;
  * This is the only class of the project. It consists in a custom dialog that shows the GUI
  * used for choosing a color using three sliders or an input field.
  *
- * @author Simone Pessotto
  */
+
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class ColorPicker extends Dialog implements SeekBar.OnSeekBarChangeListener {
 
     private final Activity activity;

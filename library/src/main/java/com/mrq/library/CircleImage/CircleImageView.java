@@ -31,6 +31,11 @@ import androidx.annotation.RequiresApi;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 @SuppressWarnings("UnusedDeclaration")
 public class CircleImageView extends androidx.appcompat.widget.AppCompatImageView {
 

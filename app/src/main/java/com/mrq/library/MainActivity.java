@@ -49,18 +49,16 @@ public class MainActivity extends AppCompatActivity {
         init();
         circleAlarmTimerView();
         logger();
-        NumberToWord();
         hideKeyboard();
 //        Utils();
         fastScroller();
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 speakToText();
             }
         });
-
+        String numberToWord = Utils.getInstance().NumberToWord(10);
     }
 
     private void init() {
@@ -85,19 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("circleAlarmTimerView", ending);
             }
         });
-
-
-    }
-
-    private void NumberToWord() {
-        NumberToWords instance_name = new NumberToWords();
-        instance_name.startPrint(206);
-        StringBuffer in_words = new StringBuffer();
-        for (String s : instance_name.output) {
-            in_words.append(s);
-            in_words.append(" ");
-        }
-        textView1.setText(in_words);
 
 
     }

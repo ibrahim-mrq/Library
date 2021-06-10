@@ -1,5 +1,6 @@
 package com.mrq.library.Z_setting;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
@@ -27,18 +28,12 @@ import java.security.MessageDigest;
 import java.util.Enumeration;
 
 /**
- * 系统信息工具包<br>
- * <p>
- * <b>创建时间</b> 2014-8-14
- */
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public final class SystemUtil {
 
-
-    /**
-     * 获取手机ip地址 需联网环境下
-     *
-     * @return
-     */
     public static String getPhoneIp() {
         try {
             for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
@@ -57,11 +52,6 @@ public final class SystemUtil {
         return "";
     }
 
-    /**
-     * 获取手机mac地址
-     *
-     * @return
-     */
     public static String getMacAddress() {
         String macSerial = "";
         try {
@@ -82,43 +72,22 @@ public final class SystemUtil {
         return macSerial;
     }
 
-    /**
-     * 获取手机IMEI码
-     *
-     * @param cxt
-     * @return
-     */
+    @SuppressLint("MissingPermission")
     public static String getPhoneIMEI(Context cxt) {
         TelephonyManager tm = (TelephonyManager) cxt
                 .getSystemService(Context.TELEPHONY_SERVICE);
         return tm.getDeviceId();
     }
 
-    /**
-     * 获取手机系统SDK版本
-     *
-     * @return 如API 17 则返回 17
-     */
     @TargetApi(Build.VERSION_CODES.DONUT)
     public static int getSDKVersion() {
         return Build.VERSION.SDK_INT;
     }
 
-    /**
-     * 获取系统版本
-     *
-     * @return 形如2.3.3
-     */
     public static String getSystemVersion() {
         return Build.VERSION.RELEASE;
     }
 
-    /**
-     * 调用系统发送短信
-     *
-     * @param cxt
-     * @param smsBody 短信内容
-     */
     public static void sendSMS(Context cxt, String smsBody) {
         Uri smsToUri = Uri.parse("smsto:");
         Intent intent = new Intent(Intent.ACTION_SENDTO, smsToUri);
@@ -126,12 +95,6 @@ public final class SystemUtil {
         cxt.startActivity(intent);
     }
 
-    /**
-     * 判断网络是否连接
-     *
-     * @param context
-     * @return
-     */
     public static boolean checkNet(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -139,12 +102,6 @@ public final class SystemUtil {
         return info != null;// 网络是否连接
     }
 
-    /**
-     * 判断是否为wifi联网
-     *
-     * @param cxt
-     * @return
-     */
     public static boolean isWiFi(Context cxt) {
         ConnectivityManager cm = (ConnectivityManager) cxt
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -155,12 +112,6 @@ public final class SystemUtil {
         return State.CONNECTED == state;
     }
 
-    /**
-     * 判断手机是否处理睡眠
-     *
-     * @param context
-     * @return 返回是否睡眠
-     */
     public static boolean isSleeping(Context context) {
         KeyguardManager kgMgr = (KeyguardManager) context
                 .getSystemService(Context.KEYGUARD_SERVICE);
@@ -168,12 +119,6 @@ public final class SystemUtil {
         return isSleeping;
     }
 
-    /**
-     * 安装apk
-     *
-     * @param context
-     * @param file
-     */
     public static void installApk(Context context, File file) {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.VIEW");
@@ -186,9 +131,6 @@ public final class SystemUtil {
         context.startActivity(intent);
     }
 
-    /**
-     * 获取当前应用程序的版本号
-     */
     public static String getAppVersionName(Context context) {
         String version = "0";
         try {
@@ -201,12 +143,6 @@ public final class SystemUtil {
         return version;
     }
 
-    /**
-     * 获取当前应用程序的版本号
-     *
-     * @param context
-     * @return
-     */
     public static int getAppVersionCode(Context context) {
         int version = 0;
         try {
@@ -219,11 +155,6 @@ public final class SystemUtil {
         return version;
     }
 
-    /**
-     * 回到HOME，后台运行
-     *
-     * @param context
-     */
     public static void goHome(Context context) {
         Intent mHomeIntent = new Intent(Intent.ACTION_MAIN);
         mHomeIntent.addCategory(Intent.CATEGORY_HOME);
@@ -232,12 +163,6 @@ public final class SystemUtil {
         context.startActivity(mHomeIntent);
     }
 
-    /**
-     * 获取应用签名
-     *
-     * @param context
-     * @param pkgName
-     */
     public static String getSign(Context context, String pkgName) {
         try {
             PackageInfo pis = context.getPackageManager().getPackageInfo(
@@ -249,12 +174,6 @@ public final class SystemUtil {
         }
     }
 
-    /**
-     * 将签名字符串转换成需要的32位签名
-     *
-     * @param paramArrayOfByte
-     * @return
-     */
     private static String hexdigest(byte[] paramArrayOfByte) {
         final char[] hexDigits = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97,
                 98, 99, 100, 101, 102};
@@ -276,12 +195,6 @@ public final class SystemUtil {
         return "";
     }
 
-    /**
-     * 获取设备的可用内存大小
-     *
-     * @param cxt 应用上下文对象context
-     * @return 当前内存大小
-     */
     public static int getDeviceUsableMemory(Context cxt) {
         ActivityManager am = (ActivityManager) cxt
                 .getSystemService(Context.ACTIVITY_SERVICE);

@@ -9,6 +9,10 @@ import androidx.annotation.Nullable;
 
 import com.mrq.library.FastScroll.FastScroller;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
 
 public abstract class ScrollerViewProvider {
 

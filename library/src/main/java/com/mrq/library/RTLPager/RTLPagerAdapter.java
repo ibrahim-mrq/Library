@@ -7,6 +7,11 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class RTLPagerAdapter extends FragmentPagerAdapter {
 
     private ArrayList<ViewPagerModel> list;

@@ -14,6 +14,11 @@ import android.widget.ImageView;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 @SuppressLint("AppCompatCustomView")
 public class BubbleImageView extends ImageView {
     private BubbleDrawable bubbleDrawable;

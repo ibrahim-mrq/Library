@@ -1,5 +1,10 @@
 package com.mrq.library.FastScroll.viewprovider;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class DefaultBubbleBehavior implements ViewBehavior {
 
     private final VisibilityAnimationManager animationManager;

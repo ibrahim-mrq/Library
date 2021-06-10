@@ -1,8 +1,10 @@
 package com.mrq.library.FastScroll;
 
 /**
- * Created by mklimczak on 31/07/15.
- */
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public interface SectionTitleProvider{
 
     /**

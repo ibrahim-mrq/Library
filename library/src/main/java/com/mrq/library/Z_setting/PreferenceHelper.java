@@ -6,6 +6,11 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Build;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class PreferenceHelper {
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     public static void write(Context context, String fileName, String k, int v) {

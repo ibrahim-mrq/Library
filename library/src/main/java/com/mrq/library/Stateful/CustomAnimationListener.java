@@ -2,6 +2,11 @@ package com.mrq.library.Stateful;
 
 import android.view.animation.Animation;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 @SuppressWarnings("PMD.UncommentedEmptyMethodBody")
 public class CustomAnimationListener implements Animation.AnimationListener {
 

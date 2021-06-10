@@ -10,6 +10,11 @@ import androidx.annotation.AnimatorRes;
 
 import com.mrq.library.R;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class VisibilityAnimationManager {
 
     protected final View view;

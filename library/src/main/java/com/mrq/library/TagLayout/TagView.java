@@ -20,6 +20,11 @@ import android.view.View;
 
 import androidx.customview.widget.ViewDragHelper;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class TagView extends View {
 
     /** Border width*/

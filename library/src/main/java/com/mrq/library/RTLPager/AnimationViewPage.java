@@ -4,6 +4,11 @@ import android.view.View;
 
 import androidx.viewpager.widget.ViewPager;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class AnimationViewPage implements ViewPager.PageTransformer {
 
     private static final float MIN_SCALE = 0.85f;

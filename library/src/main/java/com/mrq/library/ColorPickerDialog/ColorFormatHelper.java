@@ -2,6 +2,11 @@ package com.mrq.library.ColorPickerDialog;
 
 import androidx.annotation.IntRange;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 final class ColorFormatHelper {
 
     /**

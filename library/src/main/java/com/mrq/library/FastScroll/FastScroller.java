@@ -16,11 +16,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.mrq.library.FastScroll.viewprovider.DefaultScrollerViewProvider;
 import com.mrq.library.FastScroll.viewprovider.ScrollerViewProvider;
 import com.mrq.library.R;
-
-
 /**
- * Created by mklimczak on 28/07/15.
- */
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 public class FastScroller extends LinearLayout {
 
     private static final int STYLE_NONE = -1;

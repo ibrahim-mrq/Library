@@ -6,6 +6,11 @@ import androidx.annotation.DrawableRes;
 
 import java.io.Serializable;
 
+/**
+ * create by Ibrahim Mrq
+ * 10/6/2021
+ * */
+
 @SuppressWarnings("PMD.AvoidFieldNameMatchingMethodName")
 public class CustomStateOptions implements Serializable {
 
