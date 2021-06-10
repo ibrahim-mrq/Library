@@ -1,13 +1,10 @@
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
-
 ## Getting Started
-<br/>
 These instructions will help you set up this library easily on your current project and working in no time. You only need a few configurations to start working!
 <br/>
 
 ## Installing
-<br/>
 To be able to use the following library, you will need to add the following gradle dependency in your
 <br/>
 1. build.gradle Project level
