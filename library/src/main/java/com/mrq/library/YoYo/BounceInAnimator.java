@@ -5,7 +5,7 @@ import android.view.View;
 
 /**
  * create by Ibrahim Mrq
- * 10/6/2021
+ * 10/June/2021
  * */
 
 public class BounceInAnimator extends BaseViewAnimator {

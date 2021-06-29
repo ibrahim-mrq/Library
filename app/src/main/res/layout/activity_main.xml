@@ -97,6 +97,19 @@
             android:layout_height="wrap_content"
             android:text="Speak" />
 
+        <com.mrq.library.VerticalTextView.VerticalTextView
+            android:id="@+id/design_tv_category_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rotation="180"
+            android:text="Hot Promotion"
+            android:textColor="@color/weak"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

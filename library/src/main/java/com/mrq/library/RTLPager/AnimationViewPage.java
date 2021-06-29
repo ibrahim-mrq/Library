@@ -6,7 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 /**
  * create by Ibrahim Mrq
- * 10/6/2021
+ * 10/June/2021
  * */
 
 public class AnimationViewPage implements ViewPager.PageTransformer {
