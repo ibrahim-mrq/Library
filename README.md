@@ -52,6 +52,8 @@ That is the basic set up needed to be able to use the library in your applicatio
 
 ## [Toasty](https://github.com/ibrahim-mrq/library#toasty-1 "Toasty")
 
+## [VegaLayoutManager](https://github.com/ibrahim-mrq/library#VegaLayoutManager-1 "VegaLayoutManager")
+
 ## [YOYO](https://github.com/ibrahim-mrq/library#yoyo-1 "YOYO")
 
 
@@ -101,15 +103,12 @@ BubbleTab
     android:layout_height="match_parent"/>
 
 ```
-
-  java
   
 ```java
 
 bubbleTab.setupWithViewPager(viewPager);
 
 ```
-drawable
 
 ```drawable
 
@@ -525,6 +524,16 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
         Toasty.custom(this, "Hello word", ToastyUtils.getDrawable(this, R.drawable.img) , Toasty.LENGTH_SHORT, true).show();
 
 
+```
+
+## VegaLayoutManager
+
+  java
+  
+``` java
+
+    recyclerView.setLayoutManager(new VegaLayoutManager());
+    
 ```
 
 
