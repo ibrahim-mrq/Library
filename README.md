@@ -59,6 +59,69 @@ That is the basic set up needed to be able to use the library in your applicatio
 
 ## BubbleView
 
+BubbleTab
+
+```xml
+<com.mrq.library.BubbleView.BubbleTab
+        android:id="@+id/bubbleTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        app:bubbleTab_circleColor="@color/colorAccent"
+        app:bubbleTab_circleRatio="1.25">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_hourglass_selector" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_event_selector" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_query_selector" />
+
+</com.mrq.library.BubbleView.BubbleTab>
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+```
+
+```java
+
+bubbleTab.setupWithViewPager(viewPager);
+
+```
+
+
+```drawable
+
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/bubbletab_ic_account_selected"/>
+    <item android:drawable="@drawable/bubbletab_ic_account"/>
+</selector>
+
+
+```
+
+
+
  BubbleLinearLayout
 
 ```xml
