@@ -102,12 +102,14 @@ BubbleTab
 
 ```
 
+  java
+  
 ```java
 
 bubbleTab.setupWithViewPager(viewPager);
 
 ```
-
+drawable
 
 ```drawable
 
@@ -119,8 +121,6 @@ bubbleTab.setupWithViewPager(viewPager);
 
 
 ```
-
-
 
  BubbleLinearLayout
 
