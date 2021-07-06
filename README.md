@@ -1,6 +1,8 @@
 [![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
 
 ## Getting Started
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary?ref=badge_shield)
+
 These instructions will help you set up this library easily on your current project and working in no time. You only need a few configurations to start working!
 <br/>
 
@@ -596,3 +598,7 @@ final ColorPicker cp = new ColorPicker(this, 118, 96, 170);
 
 <br/>
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary?ref=badge_large)
