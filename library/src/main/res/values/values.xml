@@ -177,7 +177,55 @@
         </attr>
     </declare-styleable>
 
-    <!--    TODO : style-->
+    <declare-styleable name="BubbleTab">
+        <attr name="bubbleTab_selectedColor" format="color" />
+        <attr name="bubbleTab_unselectedColor" format="color" />
+        <attr name="bubbleTab_circleColor" format="color" />
+        <attr name="bubbleTab_circleRatio" format="float" />
+        <attr name="bubbleTab_image0" format="reference" />
+        <attr name="bubbleTab_image0Colored" format="reference" />
+        <attr name="bubbleTab_image1" format="reference" />
+        <attr name="bubbleTab_image2" format="reference" />
+        <attr name="bubbleTab_image3" format="reference" />
+        <attr name="bubbleTab_image4" format="reference" />
+        <attr name="bubbleTab_image5" format="reference" />
+        <attr name="bubbleTab_image6" format="reference" />
+        <attr name="bubbleTab_image7" format="reference" />
+        <attr name="bubbleTab_image8" format="reference" />
+        <attr name="bubbleTab_image9" format="reference" />
+        <attr name="bubbleTab_image10" format="reference" />
+    </declare-styleable>
+
+    <!--    TODO : fastscroll__style -->
+
+    <attr name="fastscroll__style" format="reference" />
+    <declare-styleable name="fastscroll__fastScroller">
+        <attr name="fastscroll__bubbleColor" format="color" />
+        <attr name="fastscroll__handleColor" format="color" />
+        <attr name="fastscroll__textColor" format="color" />
+        <attr name="fastscroll__bubbleTextAppearance" format="reference" />
+    </declare-styleable>
+
+    <!--    TODO : text image view-->
+
+    <color name="g_white">#fafafa</color>
+    <color name="google_deepPurple_500">#673AB7</color>
+
+    <declare-styleable name="GThumb">
+        <attr name="gtTextSize" format="dimension" />
+        <attr name="gtPreviewText" format="string" />
+        <attr name="gtMonoBGColor" format="color" />
+        <attr name="gtMonoTextColor" format="color" />
+        <attr name="gtBackgroundShape" format="enum">
+            <enum name="round" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="gtUseBoldText" format="boolean" />
+        <attr name="gtHideUntilImageLoaded" format="boolean" />
+    </declare-styleable>
+
+
+    <!--    TODO : style Material -->
     <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -186,6 +234,7 @@
         <item name="android:windowAnimationStyle">@style/CustomStartActivityAnimation</item>
     </style>
 
+    <!--    TODO : style-->
     <style name="CustomStartActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
@@ -193,24 +242,14 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
+    <!--    TODO : app bar-->
     <style name="appBarStyleBoldText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:fontFamily">@font/font_bold</item>
     </style>
 
+    <!--    TODO : bottom bar-->
     <style name="bottomBarStyle">
         <item name="android:fontFamily">@font/font_bold</item>
     </style>
-
-    // TODO : fastscroll__style
-
-        <attr name="fastscroll__style" format="reference" />
-        <declare-styleable name="fastscroll__fastScroller">
-            <attr name="fastscroll__bubbleColor" format="color" />
-            <attr name="fastscroll__handleColor" format="color" />
-            <attr name="fastscroll__textColor" format="color" />
-            <attr name="fastscroll__bubbleTextAppearance" format="reference" />
-        </declare-styleable>
-
-
 
 </resources>

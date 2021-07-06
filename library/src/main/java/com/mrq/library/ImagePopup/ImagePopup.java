@@ -18,6 +18,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 
+import com.mrq.library.ImageZoom.ImageZoom;
 import com.mrq.library.R;
 import com.squareup.picasso.Picasso;
 
@@ -26,15 +27,16 @@ import java.io.File;
 /**
  * create by Ibrahim Mrq
  * 10/June/2021
- * */
+ */
 
 public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
     private Context context;
     private PopupWindow popupWindow;
     private View layout;
-    private ImageView imageView;
+    private ImageZoom imageView;
     private int windowHeight = 0;
     private int windowWidth = 0;
+    private float dimAmount = 0.7f;
     private boolean imageOnClickClose;
     private boolean hideCloseIcon;
     private boolean fullScreen;
@@ -48,6 +50,14 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
 
     public ImagePopup(Context context, AttributeSet attrs) {
         super(context, attrs);
+    }
+
+    public float getDimAmount() {
+        return dimAmount;
+    }
+
+    public void setDimAmount(float dimAmount) {
+        this.dimAmount = dimAmount;
     }
 
     public int getWindowHeight() {
@@ -104,7 +114,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
             layout = inflater.inflate(R.layout.custom_popup, (ViewGroup) findViewById(R.id.popup));
             layout.setBackgroundColor(getBackgroundColor());
-            imageView = (ImageView) layout.findViewById(R.id.imageView);
+            imageView = (ImageZoom) layout.findViewById(R.id.imageView);
             imageView.setImageDrawable(drawable);
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,7 +126,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
             layout = inflater.inflate(R.layout.custom_popup, (ViewGroup) findViewById(R.id.popup));
             layout.setBackgroundColor(getBackgroundColor());
-            imageView = (ImageView) layout.findViewById(R.id.imageView);
+            imageView = (ImageZoom) layout.findViewById(R.id.imageView);
             Picasso.get().load(imageUrl).into(imageView);
         } catch (Exception e) {
             e.printStackTrace();
@@ -129,7 +139,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
             layout = inflater.inflate(R.layout.custom_popup, (ViewGroup) findViewById(R.id.popup));
             layout.setBackgroundColor(getBackgroundColor());
-            imageView = (ImageView) layout.findViewById(R.id.imageView);
+            imageView = (ImageZoom) layout.findViewById(R.id.imageView);
             Picasso.get().load(imageUri).into(imageView);
         } catch (Exception e) {
             e.printStackTrace();
@@ -142,7 +152,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
             layout = inflater.inflate(R.layout.custom_popup, (ViewGroup) findViewById(R.id.popup));
             layout.setBackgroundColor(getBackgroundColor());
-            imageView = (ImageView) layout.findViewById(R.id.imageView);
+            imageView = (ImageZoom) layout.findViewById(R.id.imageView);
             Picasso.get().load(imageFile).into(imageView);
         } catch (Exception e) {
             e.printStackTrace();
@@ -203,7 +213,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
         dimBehind(popupWindow);
     }
 
-    public static void dimBehind(PopupWindow popupWindow) {
+    public void dimBehind(PopupWindow popupWindow) {
         try {
             View container;
             if (popupWindow.getBackground() == null) {
@@ -223,7 +233,7 @@ public class ImagePopup extends androidx.appcompat.widget.AppCompatImageView {
             WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
             WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
             p.flags = WindowManager.LayoutParams.FLAG_DIM_BEHIND;
-            p.dimAmount = 0.3f;
+            p.dimAmount = dimAmount;
             wm.updateViewLayout(container, p);
         } catch (Exception e) {
             e.printStackTrace();

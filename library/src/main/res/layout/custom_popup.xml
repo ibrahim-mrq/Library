@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
+    <com.mrq.library.ImageZoom.ImageZoom
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@android:drawable/sym_action_call"
+        android:src="@drawable/blank_images"
         app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
         app:layout_constraintLeft_toRightOf="@id/guideline_lift"
         app:layout_constraintRight_toLeftOf="@id/guideline_right"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/shape_icon_close_popup_image"
         android:src="@drawable/ic_close"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintRight_toLeftOf="@id/guideline_right" />
+        app:layout_constraintRight_toLeftOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_lift"

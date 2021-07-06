@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="empty_field">This field cannot be left blank</string>
+</resources>

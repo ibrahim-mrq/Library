@@ -24,6 +24,7 @@ import com.mrq.library.Logger.AndroidLogAdapter;
 import com.mrq.library.Logger.Logger;
 import com.mrq.library.Toasty.Toasty;
 import com.mrq.library.Toasty.ToastyUtils;
+import com.mrq.library.VegaLayoutManager.VegaLayoutManager;
 import com.mrq.library.Z_setting.HideUtil;
 import com.mrq.library.Z_setting.NumberToWords;
 import com.mrq.library.Z_setting.Utils;
@@ -59,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         String numberToWord = Utils.getInstance().NumberToWord(10);
+
+
     }
 
     private void init() {
@@ -155,17 +158,10 @@ public class MainActivity extends AppCompatActivity {
         AdapterStringAdapter adapterString = new AdapterStringAdapter(list, this);
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         FastScroller fastScroller = findViewById(R.id.fastscroll);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new VegaLayoutManager());
         recyclerView.setAdapter(adapterString);
         fastScroller.setRecyclerView(recyclerView);
-
-
-        /**
-         * {@linkplain FastScroller}
-         * {@link  Collections.sort(list)}.sort(list , Collection.reverseOrder());
-         * AdapterStringAdapter adapterStringAdapter = new AdapterStringAdapter(list, this);
-         * RecyclerView recyclerView = findViewById(R.id.rv);
-         **/
     }
 
     @Override

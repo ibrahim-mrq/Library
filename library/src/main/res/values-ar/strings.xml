@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_field">لا يمكن ترك هذا الحقل فارغاً</string>
+    <string name="invalid_email">الرجاء إدخال بريد الكتروني صالح</string>
+</resources>

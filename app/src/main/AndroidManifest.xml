@@ -17,16 +17,16 @@
 
         <activity
             android:name=".ValidatePasswordActivity"
-            android:theme="@style/MaterialThemes">
+            android:theme="@style/MaterialThemes" />
+
+        <activity android:name=".TabActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TabActivity" />
-        <activity android:name=".MainActivity" />
 
     </application>
 

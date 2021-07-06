@@ -36,8 +36,10 @@ import android.text.style.StyleSpan;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.ColorRes;
@@ -76,21 +78,39 @@ public final class Utils {
         return instance;
     }
 
-    private String emailFormat() {
-        return "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +
-                "\\@" +
-                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" +
-                "(" +
-                "\\." +
-                "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" +
-                ")+";
+    private boolean isNotEmpty(Activity context, EditText editText) {
+        if (editText.getText().toString().trim().isEmpty()) {
+            editText.setError(context.getResources().getString(R.string.empty_field));
+            editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et_error));
+            return false;
+        } else {
+            editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et));
+            return true;
+        }
     }
 
-    public boolean isEmailFormat(Activity context, String email) {
-        if (!email.matches(emailFormat())) {
-            Toasty.error(context, "تأكد من ادخال اليميل بالشكل الصحيح").show();
+    private boolean isValidEmail(Activity context, EditText editText) {
+        if (Patterns.EMAIL_ADDRESS.matcher(editText.getText().toString().trim()).matches()) {
+            editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et));
+            return true;
+        } else {
+            editText.setError(context.getResources().getString(R.string.invalid_email));
+            editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et_error));
             return false;
-        } else return true;
+        }
+    }
+
+    private void sendEmail(Activity context, EditText emails, EditText subject, EditText message) {
+        String recipientList = emails.getText().toString().trim();
+        String[] recipients = recipientList.split(",");
+        String sub = subject.getText().toString();
+        String msg = message.getText().toString();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+        intent.putExtra(Intent.EXTRA_SUBJECT, sub);
+        intent.putExtra(Intent.EXTRA_TEXT, msg);
+        intent.setType("message/rfc822");
+        context.startActivity(Intent.createChooser(intent, "choose an email client"));
     }
 
     public String NumberToWord(int number) {
@@ -119,7 +139,6 @@ public final class Utils {
         spannableString.setSpan(new ForegroundColorSpan(Color.RED), startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); //To change color of text
         builder.append(spannableString);
         textView.setText(builder, TextView.BufferType.SPANNABLE);
-
     }
 
     private String getKeyHash(Activity context) {
