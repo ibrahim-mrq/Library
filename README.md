@@ -20,7 +20,9 @@ allprojects {
 2. build.gradle module
 
 ```
-implementation 'com.github.ibrahim-mrq:library:1.0.4'
+implementation 'com.github.ibrahim-mrq:library:1.0.5'
+or
+ implementation project(path: ':library')
 ```
    
 <br/>
