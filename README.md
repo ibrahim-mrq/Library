@@ -12,12 +12,7 @@ To be able to use the following library, you will need to add the following grad
 1. build.gradle Project level
 
 ```
-allprojects {
-   repositories {
-      	jcenter()
-       	maven { url "https://jitpack.io" }  //Make sure to add this in your project 
-   }
-}
+maven { url "https://jitpack.io" }
 ```
 2. build.gradle module
 
