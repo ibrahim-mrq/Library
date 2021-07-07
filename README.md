@@ -23,10 +23,13 @@ allprojects {
 
 ```
 implementation 'com.github.ibrahim-mrq:library:1.0.5'
-or
- implementation project(path: ':library')
 ```
+or
    
+```
+ implementation project(path: ':library')
+ ```
+
 <br/>
 
 That is the basic set up needed to be able to use the library in your applications!
