@@ -1,4 +1,6 @@
-[![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library)
+[![](https://jitpack.io/v/ibrahim-mrq/library.svg)](https://jitpack.io/#ibrahim-mrq/library) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fibrahim-mrq%2Flibrary?ref=badge_shield)
+
+
 
 ## Getting Started
 These instructions will help you set up this library easily on your current project and working in no time. You only need a few configurations to start working!
@@ -10,19 +12,19 @@ To be able to use the following library, you will need to add the following grad
 1. build.gradle Project level
 
 ```
-allprojects {
-   repositories {
-      	jcenter()
-       	maven { url "https://jitpack.io" }  //Make sure to add this in your project 
-   }
-}
+maven { url "https://jitpack.io" }
 ```
 2. build.gradle module
 
 ```
-implementation 'com.github.ibrahim-mrq:library:1.0.4'
+implementation 'com.github.ibrahim-mrq:library:1.0.5'
 ```
+or
    
+```
+ implementation project(path: ':library')
+ ```
+
 <br/>
 
 That is the basic set up needed to be able to use the library in your applications!
