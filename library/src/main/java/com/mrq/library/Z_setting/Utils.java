@@ -31,12 +31,14 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.format.DateFormat;
+import android.text.method.PasswordTransformationMethod;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -78,7 +80,7 @@ public final class Utils {
         return instance;
     }
 
-    private boolean isNotEmpty(Activity context, EditText editText) {
+    public boolean isNotEmpty(Activity context, EditText editText) {
         if (editText.getText().toString().trim().isEmpty()) {
             editText.setError(context.getResources().getString(R.string.empty_field));
             editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et_error));
@@ -89,7 +91,7 @@ public final class Utils {
         }
     }
 
-    private boolean isValidEmail(Activity context, EditText editText) {
+    public boolean isValidEmail(Activity context, EditText editText) {
         if (Patterns.EMAIL_ADDRESS.matcher(editText.getText().toString().trim()).matches()) {
             editText.setBackground(ContextCompat.getDrawable(context, R.drawable.shape_et));
             return true;
@@ -100,7 +102,7 @@ public final class Utils {
         }
     }
 
-    private void sendEmail(Activity context, EditText emails, EditText subject, EditText message) {
+    public void sendEmail(Activity context, EditText emails, EditText subject, EditText message) {
         String recipientList = emails.getText().toString().trim();
         String[] recipients = recipientList.split(",");
         String sub = subject.getText().toString();
@@ -111,6 +113,36 @@ public final class Utils {
         intent.putExtra(Intent.EXTRA_TEXT, msg);
         intent.setType("message/rfc822");
         context.startActivity(Intent.createChooser(intent, "choose an email client"));
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    public void setEtPasswordToggle( final EditText loginEtPassword) {
+        loginEtPassword.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final int DRAWABLE_LEFT = 0;
+                final int DRAWABLE_TOP = 1;
+                final int DRAWABLE_RIGHT = 2;
+                final int DRAWABLE_BOTTOM = 3;
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    if (event.getRawX() >= (loginEtPassword.getRight()
+                            - loginEtPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                        loginEtPassword.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock, 0, R.drawable.ic_hide_password, 0);
+                        loginEtPassword.setTransformationMethod(new PasswordTransformationMethod());
+                        return true;
+                    }
+                }
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    if (event.getRawX() >= (loginEtPassword.getRight()
+                            - loginEtPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                        loginEtPassword.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock, 0, R.drawable.ic_show_password, 0);
+                        loginEtPassword.setTransformationMethod(null);
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
     }
 
     public String NumberToWord(int number) {
@@ -141,7 +173,7 @@ public final class Utils {
         textView.setText(builder, TextView.BufferType.SPANNABLE);
     }
 
-    private String getKeyHash(Activity context) {
+    public String getKeyHash(Activity context) {
         String keyHash = "";
         try {
             @SuppressLint("PackageManagerGetSignatures") PackageInfo info = context.getPackageManager().getPackageInfo(

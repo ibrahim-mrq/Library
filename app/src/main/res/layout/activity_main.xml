@@ -105,7 +105,7 @@
             android:layout_marginVertical="10dp"
             android:gravity="center"
             android:padding="5dp"
-            android:rotation="180"
+            android:rotation="-140"
             android:text="Hot Promotion"
             android:textColor="@color/weak"
             android:textSize="18sp"
